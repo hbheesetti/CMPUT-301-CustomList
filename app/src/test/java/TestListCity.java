@@ -25,7 +25,7 @@ public class TestListCity {
 
     public void deleteCityTest(){
         int listSize = list.getCount();
-        int size = listSize-1;
+        int size = listSize-2;
         list.deleteCity();
         assertEquals(list.getCount(), size);
     }
