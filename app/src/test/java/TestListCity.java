@@ -22,4 +22,10 @@ public class TestListCity {
         list.addCity(new City("Halifax", "NS"));
         assertEquals(list.getCount(), listSize+1);
     }
+
+    public void deleteCityTest(){
+        int listSize = list.getCount();
+        list.deleteCity();
+        assertEquals(list.getCount(), listSize-1);
+    }
 }
