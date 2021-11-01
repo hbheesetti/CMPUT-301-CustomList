@@ -23,9 +23,10 @@ public class TestListCity {
         assertEquals(list.getCount(), listSize+1);
     }
 
+    @Test
     public void deleteCityTest(){
         int listSize = list.getCount();
-        int size = listSize-2;
+        int size = listSize-1;
         list.deleteCity();
         assertEquals(list.getCount(), size);
     }
